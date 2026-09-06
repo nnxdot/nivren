@@ -11,7 +11,7 @@ repository = "https://github.com/violetweather/nivren"
 pollster = "0.4"
 serde = { version = "1.0.229", features = ["derive"] }
 serde_json = "1.0.151"
-wgpu = "26"
+wgpu = "30"
 
 [lints.rust]
 unsafe_code = "forbid"

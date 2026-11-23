@@ -30,25 +30,12 @@ ignore = [
     # rkyv 0.8.17 or later, or when the optional dependency is removed.
     "RUSTSEC-2026-0235",
 
-    # RUSTSEC-2024-0411 .. RUSTSEC-2024-0420 — the gtk-rs GTK3 bindings
-    # (gdkwayland-sys, gdk, atk, gdkx11-sys, gtk, atk-sys, gdkx11, gdk-sys,
-    # gtk3-macros, gtk-sys) are no longer maintained, and
     # RUSTSEC-2024-0429 — unsound iterator impls in glib 0.18.
     #
     # All reach the lockfile only through tao/wry's Linux webview backend,
     # which is never compiled: tao and wry are Windows-only dependencies of
     # nivren-desktop-host, and no Nivren build targets GTK. Drop these when
     # tao/wry move to GTK4 or the desktop host stops depending on them.
-    "RUSTSEC-2024-0411",
-    "RUSTSEC-2024-0412",
-    "RUSTSEC-2024-0413",
-    "RUSTSEC-2024-0414",
-    "RUSTSEC-2024-0415",
-    "RUSTSEC-2024-0416",
-    "RUSTSEC-2024-0417",
-    "RUSTSEC-2024-0418",
-    "RUSTSEC-2024-0419",
-    "RUSTSEC-2024-0420",
     "RUSTSEC-2024-0429",
 
     # RUSTSEC-2024-0370 — proc-macro-error is unmaintained.
